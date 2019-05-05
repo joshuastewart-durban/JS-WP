@@ -1,76 +1,59 @@
 <?php
 /**
- * The main template file.
+ * The main template file
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package understrap
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Joshua_Stewart_Portfolio
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
-
 get_header();
-
-$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
-<?php endif; ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-<div class="wrapper" id="index-wrapper">
+		<?php
+		if ( have_posts() ) :
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+			if ( is_home() && ! is_front_page() ) :
+				?>
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
+				<?php
+			endif;
 
-		<div class="row">
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
 
-			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+				/*
+				 * Include the Post-Type-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', get_post_type() );
 
-			<main class="site-main" id="main">
+			endwhile;
 
-				<?php if ( have_posts() ) : ?>
+			the_posts_navigation();
 
-					<?php /* Start the Loop */ ?>
+		else :
 
-					<?php while ( have_posts() ) : the_post(); ?>
+			get_template_part( 'template-parts/content', 'none' );
 
-						<?php
+		endif;
+		?>
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-						?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-					<?php endwhile; ?>
-
-				<?php else : ?>
-
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
-
-				<?php endif; ?>
-
-			</main><!-- #main -->
-
-			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
-
-		</div><!-- .row -->
-
-	</div><!-- #content -->
-
-</div><!-- #index-wrapper -->
-
-<?php get_footer(); ?>
+<?php
+get_sidebar();
+get_footer();
