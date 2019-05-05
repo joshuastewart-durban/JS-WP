@@ -1,3 +1,11 @@
+<?php
+/**
+ * The frontpage template file
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Joshua_Stewart_Portfolio
+ */
 get_header(); ?>
 
 <div id="primary" class="content-area">
