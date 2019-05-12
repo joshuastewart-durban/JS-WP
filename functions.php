@@ -122,9 +122,13 @@ add_action( 'widgets_init', 'jlush_widgets_init' );
 function jlush_scripts() {
 	wp_enqueue_style( 'jlush-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+
 	wp_enqueue_script( 'jlush-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'jlush-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+		
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array( 'jquery' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -165,3 +169,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+// Include custom navwalker
+require_once('bs4navwalker.php');
+
+// Register WordPress nav menu
+register_nav_menu('top', 'Top menu');
