@@ -9,6 +9,11 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php the_content(); ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+<div class="container">
+    <div class="mainheading">
+        <h1 class="sitetitle">Mediumish</h1>
+        <p class="lead">
+            Bootstrap theme, medium style, simply perfect for bloggers
+        </p>
+    </div>
+</div>

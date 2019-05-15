@@ -27,7 +27,7 @@
 
 		<header id="masthead" class="site-header">
 
-			<nav id="site-navigation" class="main-navigation navbar navbar-expand-md navbar-light fixed-top bg-light">
+			<nav id="site-navigation" class="main-navigation navbar navbar-expand-md fixed-top navbar-light bg-white mediumnavigation">
 				<a class="navbar-brand" href="#">
 					<?php bloginfo('name'); ?>
 				</a>
