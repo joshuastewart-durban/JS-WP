@@ -124,6 +124,8 @@ function jlush_scripts() {
 
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
+    wp_enqueue_style( 'custom', get_template_directory_uri() . '/css/custom.css' );
+
     wp_enqueue_style( 'mediumish', get_template_directory_uri() . '/css/mediumish.css' );
 
 	wp_enqueue_script( 'jlush-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

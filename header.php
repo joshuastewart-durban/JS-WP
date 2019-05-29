@@ -28,7 +28,7 @@
 		<header id="masthead" class="site-header">
 
 			<nav id="site-navigation" class="main-navigation navbar navbar-expand-md fixed-top navbar-light bg-white mediumnavigation">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand navbar-brand-font" href="#">
 					<?php bloginfo('name'); ?>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

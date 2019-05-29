@@ -1,0 +1,3 @@
+Allow for increased uploads
+
+docker container exec -it 6c3536915d99 bash -c "echo 'php_value upload_max_filesize 256M' > '/var/www/html/.htaccess'"
