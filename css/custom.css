@@ -3,10 +3,14 @@
     padding-top: 100px;
 }
 
-.mainheading {
+.front-page-mainheading {
     padding: 20% 0rem;
 }
 
-.landing-page-posts{
+.landing-page-posts {
     padding: 10% 0 0 0;
+}
+
+.author-container {
+    padding-top: 2rem;
 }

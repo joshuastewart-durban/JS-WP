@@ -10,7 +10,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main container-fluid">
             <div class="row">
-                <div class="col mainheading landing-blurb">
+                <div class="col mainheading front-page-mainheading  landing-blurb">
                     <h1 class="sitetitle">Online Portfolio</h1>
                     <p class="lead">
                         Find out more about my creations.
