@@ -20,13 +20,23 @@ get_header(); ?>
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/dan-rogers-1560459-unsplash.jpg"/>
                 </div>
             </div>
-            <?php
-            // the loop
-            while (have_posts()) : the_post();
-                get_template_part('template-parts/content', 'frontpage');
+            <div class="container landing-page-posts">
+                <section class="featured-posts">
+                    <div class="section-title">
+                        <h2><span>Featured</span></h2>
+                    </div>
+                    <div class="card-columns listfeaturedtag">
+                    <?php
+                    // the loop
+                    while (have_posts()) : the_post();
+                        get_template_part('template-parts/content', 'frontpage');
 
-            endwhile; // End of the loop.
-            ?>
+                    endwhile; // End of the loop.
+                    ?>
+                    </div>
+
+                </section>
+            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->

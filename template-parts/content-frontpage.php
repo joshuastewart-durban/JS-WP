@@ -9,15 +9,6 @@
  */
 ?>
 
-<div class="container landing-page-posts">
-    <section class="featured-posts">
-        <div class="section-title">
-            <h2><span>Featured</span></h2>
-        </div>
-        <div class="card-columns listfeaturedtag">
-            <?php $the_query = new WP_Query('posts_per_page=5'); ?>
-
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <!-- begin post -->
                 <div id="post-<?php the_ID(); ?>" class="card">
                     <div class="row">
@@ -58,11 +49,4 @@
                     </div>
                 </div>
                 <!-- end post -->
-            <?php
-            endwhile;
-            wp_reset_postdata();
-            ?>
-        </div>
 
-    </section>
-</div>
