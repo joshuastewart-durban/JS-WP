@@ -67,6 +67,7 @@ section {
 	background-position:38% 22% !important;
 	background-origin:border-box!important;
 	border-top-left-radius:2px;
+	overflow: hidden;
 }
 .listfeaturedtag .card-block {
 	padding: 1.25rem 1.25rem 1.25rem 0px;
