@@ -27,7 +27,7 @@
                                     <div class="wrapfooter">
 								<span class="meta-footer-thumb">
 								<a href="author.html"><img class="author-thumb"
-                                                           src="https://www.gravatar.com/avatar/e56154546cf4be74e393c62d1ae9f9d4?s=250&amp;d=mm&amp;r=x"
+                                                           src="<?php bloginfo('stylesheet_directory'); ?>/images/myAvatar.svg"
                                                            alt="Sal"></a>
 								</span>
                                         <span class="author-meta">
