@@ -25,7 +25,7 @@
                         <a target="_blank" href="https://twitter.com/wowthemesnet" class="btn follow">Follow</a>
                     </div>
                     <div class="col-md-2 col-xs-12">
-                        <img class="author-thumb" src="<?php bloginfo('stylesheet_directory'); ?>/images/myAvatar.svg" alt="Sal">
+                        <img class="author-thumb" src="<?php bloginfo('stylesheet_directory'); ?>/images/myAvatar.svg" alt="JoshuaAvatar">
                     </div>
                 </div>
             </div>

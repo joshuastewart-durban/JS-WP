@@ -10,28 +10,30 @@
  */
 
 ?>
+<!-- Begin Footer
+================================================== -->
+</div><!-- #content -->
+<footer id="colophon" class="site-footer">
 
-	</div><!-- #content -->
-	<footer id="colophon" class="site-footer">
-      <div class="container">
-	  <div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'jlush' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'jlush' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'jlush' ), 'jlush', '<a href="http://underscores.me/">Joshua Stewart</a>' );
-				?>
-		</div><!-- .site-info -->
-      </div>
-    </footer><!-- #colophon -->
+	<div class="container">
+		<div class="footer">
+			<p class="pull-left">
+				Copyright &copy; 2017 Your Website Name
+			</p>
+			<p class="pull-right">
+				Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
+			</p>
+			<div class="clearfix">
+			</div>
+		</div>
+	</div>
+
+</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<!-- End Footer
+================================================== -->
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
