@@ -18,3 +18,23 @@
 .authorpage .card-block{
     padding: 1.25rem;
 }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-icon{
+    height: 100px !important;
+    text-align: center;
+}
+
+.row-spacer{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.experience-title{
+    font-family: Righteous;
+    font-size: 2rem;
+    padding-bottom: 40px;
+}

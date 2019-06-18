@@ -37,7 +37,40 @@
 <div class="authorpage">
     <div class="container-fluid graybg">
         <div class="listrecent listrelated">
-
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="experience-title">Experienced in</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <a data-toggle="tooltip" title="Vue.js">
+                        <img class="about-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img class="about-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/gatsby-logo.png">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img class="about-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/WordPress-logotype-simplified.png">
+                    </div>
+                </div>
+                <div class="row row-spacer">
+                    <div class="col-sm-4 text-center">
+                        <img class="about-icon rounded-circle" src="<?php bloginfo('stylesheet_directory'); ?>/images/Blog_Article_Responsive.jpg">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img class="about-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/React.js_logo-512.png">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <img class="about-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/225px-.NET_Core_Logo.png">
+                    </div>
+                </div>
+                <div class="section-title">
+                    <h2><span>Recent Work</span></h2>
+                </div>
+            </div>
             <!-- begin post -->
             <div class="authorpostbox">
                 <div class="card">

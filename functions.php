@@ -126,14 +126,16 @@ function jlush_scripts() {
 
     wp_enqueue_style( 'custom', get_template_directory_uri() . '/css/custom.css' );
 
-    wp_enqueue_style( 'mediumish', get_template_directory_uri() . '/css/mediumish.css' );
+	wp_enqueue_style( 'mediumish', get_template_directory_uri() . '/css/mediumish.css' );
+
+	wp_enqueue_style( 'load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script( 'jlush-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-    wp_enqueue_script( 'mediumish', get_template_directory_uri() . '/js/mediumish.js', array());
-
 	wp_enqueue_script( 'jlush-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 		
+    wp_enqueue_script( 'mediumish', get_template_directory_uri() . '/js/mediumish.js', array());
+
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array( 'jquery' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
